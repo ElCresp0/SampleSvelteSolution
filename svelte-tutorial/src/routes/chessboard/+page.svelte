@@ -1,8 +1,7 @@
 <script lang="ts">
-	import ChessGround from "../../components/ChessGround.svelte";
+	import Chessground from "../../components/Chessground.svelte";
 </script>
-
 
 <h1>This is a chessboard</h1>
 
-<ChessGround />
+<Chessground />

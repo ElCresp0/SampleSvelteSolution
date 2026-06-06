@@ -10,6 +10,8 @@
     import "$lib/assets/Chessground/chessground.cburnett.css";
     import "$lib/assets/Chessground/chessground.brown.css";
 
+    let { chessboardClass = "brown" } = $props();
+
     let chessDiv: HTMLElement;
     // let ground;
     const config = {};
@@ -21,4 +23,4 @@
     });
 </script>
 
-<div bind:this={chessDiv} class="blue"></div>
+<div bind:this={chessDiv} class={chessboardClass}></div>

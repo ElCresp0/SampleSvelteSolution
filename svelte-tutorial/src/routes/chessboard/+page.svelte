@@ -4,4 +4,4 @@
 
 <h1>This is a chessboard</h1>
 
-<Chessground />
+<Chessground chessboardClass="blue" />

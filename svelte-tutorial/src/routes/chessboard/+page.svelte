@@ -4,4 +4,4 @@
 
 <h1>This is a chessboard</h1>
 
-<Chessground chessboardClass="blue" />
+<Chessground board="blue" pieces="merida" />

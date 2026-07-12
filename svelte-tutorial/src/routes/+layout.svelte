@@ -3,31 +3,19 @@
 	import Navbar from '../components/Navbar.svelte';
 
 	let { children } = $props();
+	let navbarPages = [
+		{ address: "/generic-subpage", title: "Generic Subpage" },
+		{ address: "/chessboard", title: "Chessboard" },
+		{ address: "/about", title: "About" },
+	]
 </script>
 
 <svelte:head>
 	<link rel="icon" href={favicon} />
 </svelte:head>
 
-<div class="navbar">
-<Navbar />
-</div>
+<Navbar pages={navbarPages}/>
 
 <div class="body">
 {@render children()}
 </div>
-
-<style>
-	/* TODO: position specifically a NavBar div, not the nav element inside a component */
-	.navbar {
-	position: sticky; /* fixed absolute */
-	top: 0;
-	width: 100%;
-	z-index: 1000;
-	}
-
-	/* .body {
-		position: absolute;
-  		top: 1;
-	} */
-</style>
